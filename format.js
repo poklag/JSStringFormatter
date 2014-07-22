@@ -21,8 +21,8 @@ var __v;
             }
 
             if(typeof me._compiles[format] === 'undefined'){
-
-                format = format.replace("\r", "\\r").replace("\n", "\\n").replace("'", "\\'").replace('"', '\\"');
+                
+                format = format.replace(/\r/gm, "\\r").replace(/\n/gm, "\\n").replace(/'/gm, "\\'").replace(/"/gm, '\\"');
 
                 var func = format.replace(me.options.pattern, function(pattern, props){
                     if(typeof args === 'object'){
