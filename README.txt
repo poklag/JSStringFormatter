@@ -8,6 +8,8 @@ var user = {
    id: 771120,
    name: "alex",
    u_name: function(){
+      // function will be evaluated.
+      // refer to member of the object using 'this' keyword.
       return this.name.toUpperCase()
    },
    details:{
