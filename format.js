@@ -67,7 +67,5 @@ var __v;
 
     __v = StringFormatter.string_val;
 
-    $format = new StringFormatter({
-        pattern: /\{\{(.+?)\}\}/g
-    }).format;
+    $format = new StringFormatter().format;
 })();
