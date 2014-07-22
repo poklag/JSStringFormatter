@@ -20,5 +20,8 @@ var user = {
 
 $format("Hello, %{u_name} (%{id}): \nPI: %{details.pi}", user);
 
-// => "Hello, ALEX (771120): 
-//    PI: 3.141592653589793"
+
+Output:
+
+Hello, ALEX (771120): 
+PI: 3.141592653589793
